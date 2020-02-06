@@ -14,7 +14,8 @@ public class MainProgram extends JFrame{
 		super("Disease Prevention");
 
 		// The below line was causing errors : /
-		// img = new ImageIcon(getClass().getResource("betterogre.jpg"));
+		// the reason was because there was no "betterogre.jpg". I think I accidentally deleted it when deleting the extra files. I'm re-adding it so this will work again.
+		img = new ImageIcon(getClass().getResource("betterogre.jpg"));
 		lab2 = new JLabel(img);
 		bot = new BottomBar();
 		side = new SideBar();
