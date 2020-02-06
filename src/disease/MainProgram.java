@@ -18,6 +18,7 @@ public class MainProgram extends JFrame{
 		bot = new BottomBar();
 		side = new SideBar();
 		lol = new ToolbarThing();
+		// Tyler What are you on?
 		lab = new JLabel("blaosdkqowdkqwodkow dwqodkowq dwodkowix qoxkow ndwwoq wjkkdoqwkdwq odnjdkowqkd");
 		setLayout(new BorderLayout());
 		
