@@ -12,8 +12,9 @@ public class MainProgram extends JFrame{
 	private JLabel lab2;
 	public MainProgram() {
 		super("Disease Prevention");
-		
-		img = new ImageIcon(getClass().getResource("betterogre.jpg"));
+
+		// The below line was causing errors : /
+		// img = new ImageIcon(getClass().getResource("betterogre.jpg"));
 		lab2 = new JLabel(img);
 		bot = new BottomBar();
 		side = new SideBar();
@@ -29,7 +30,7 @@ public class MainProgram extends JFrame{
 		add(bot, BorderLayout.SOUTH);
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(2000,690);
+		setSize(800,600);
 		setVisible(true);
 	}
 }
