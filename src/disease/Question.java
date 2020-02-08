@@ -1,29 +1,57 @@
 package disease;
 
-import java.awt.*;
+
 import java.util.ArrayList;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JButton;
+import java.awt.*;
 
 public class Question {
     private String QuestionText;
     private int CorrectAnswerIndex;
     private ArrayList<String> Answers;
+    private Graphics graph;
 
+    // Constructors
     public Question() {}
+    public Question(Graphics Graph) {graph = Graph;}
     public Question(String Question, int AnswerIndex) {}
     public Question(String Question, ArrayList<String> Answers, int AnswerIndex) {}
 
 
-    public void Draw(JFrame screen)
+    public void Draw(Graphics g)
     {
-        // Question Title
-        JLabel QuestionLabel = new JLabel();
-        QuestionLabel.setText("Question " + QuestionText);
-        // Sets Position of the label.
-        //QuestionLabel.setBounds();
-        screen.add(QuestionLabel);
+    	g.drawString("BRUH", 3, 4);
+    }
+    public void Draw()
+    {
+    	graph.drawString("BRUH", 3, 4);
+    }
+    public String getQuestionText()
+    {
+        return QuestionText;
+    }
+    public void setQuestionText(String pQuestionText)
+    {
+        QuestionText = pQuestionText;
+    }
+    public ArrayList<String> getAnswers()
+    {
+        return Answers;
+    }
+    public void setAnswers(ArrayList<String> pAnswers){
+        Answers = pAnswers;
+    }
+    public void setSpecificAnswer(int index, String Value) {
+    	Answers.set(index, Value);
+    }
+    public int getCorrectAnswerIndex()
+    {
+        return CorrectAnswerIndex;
+    }
+    public void setCorrectAnswerIndex(int pAnswerIndex){
+        CorrectAnswerIndex = pAnswerIndex;
+    }
+    public void setGraphics(Graphics i){
+    	graph = i;
     }
 
 }

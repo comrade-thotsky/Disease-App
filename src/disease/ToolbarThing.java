@@ -14,4 +14,5 @@ public class ToolbarThing extends JPanel{
 		add(first);
 		add(second);
 	}
+	
 }
