@@ -1,7 +1,6 @@
 package disease;
 
 import java.awt.*;
-import java.awt.event.ComponentListener;
 import javax.swing.*;
 public class MainProgram extends JFrame{
 	public Thread t;
@@ -10,6 +9,7 @@ public class MainProgram extends JFrame{
 	// Test Question
 	private Question QuestOne = new Question();
 	private Graphics graphicsCopy;
+	private State s = new State();
 	public MainProgram() {
 		// Title of the Window
 		super("Disease Prevention Game");
