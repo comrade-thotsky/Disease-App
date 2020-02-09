@@ -11,9 +11,11 @@ public class MainProgram extends JFrame{
 	private Question QuestOne = new Question();
 	// Made to copy the graphics onto another object
 	private Graphics graphicsCopy;
+	// String State of the Main Program
+	private String Page = "Main Menu";
 	public MainProgram() {
 		// Title of the Window
-		super("Disease Prevention Game");
+		super("Disease Prevention Project");
 		// Setting a null layout so that I can position things correctly
 		setLayout(null);
 		// Setting the Size of the window
@@ -30,12 +32,12 @@ public class MainProgram extends JFrame{
 		// Fills the screen black
 		g.fillRect(0, 0, getWidth(), getHeight());
 		// Changing the position of the test button to be relative to the size of the window.
-		ChoiceOne.setBounds(0, 0, getWidth()/6, getHeight()/4);	
+		ChoiceOne.setBounds(0, 0, getWidth()/6, getHeight()/6);	
 		// Copies the graphics object into the graphics variable
 		graphicsCopy = g;
 		// Function that replaces the button text and correct answer such that the person will be able to answer the question
 		loadQuestion(QuestOne);
-    }
+    	}
 	public void loadQuestion(Question q) {
 		
 	}
