@@ -2,14 +2,15 @@ package disease;
 
 import java.awt.*;
 import javax.swing.*;
+import java.util.*;
 public class MainProgram extends JFrame{
 	public Thread t;
 	// Test Button
 	private JButton ChoiceOne = new JButton();
 	// Test Question
 	private Question QuestOne = new Question();
+	// Made to copy the graphics onto another object
 	private Graphics graphicsCopy;
-	private State s = new State();
 	public MainProgram() {
 		// Title of the Window
 		super("Disease Prevention Game");
@@ -23,8 +24,7 @@ public class MainProgram extends JFrame{
 		ChoiceOne.setBounds(getWidth()/9, 0, getWidth()/6, getHeight()/4);
 		// Setting the Button Text to "Test"
 		ChoiceOne.setText("Test");
-		// Basically appending it to the web page
-		add(ChoiceOne);
+		
 	}
 	public void paint(Graphics g) {
 		// Fills the screen black
