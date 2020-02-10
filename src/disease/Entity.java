@@ -1,12 +1,11 @@
 package disease;
-
 import java.util.*;
-
 public class Entity{
 	private ArrayList<int> statistics = new ArrayList<int>();
 	private String name = "";
 	private String description = "";
-	
+	private String state = "N/A";
+	private String status = "None";	
 	public int getCurrentHealth(){
 		return statistics.get(1);
 	}
@@ -27,6 +26,9 @@ public class Entity{
 	}
 	public int getSpeed(){
 		return statistics.get(6);
+	}
+	public String getStatus(){
+		return status;
 	}
 	public void setCurrentHealth(int health){
 		statistics.set(1, health);
@@ -56,4 +58,11 @@ public class Entity{
 	public void SkillAttack(Skill s){
 		// Get the skill level
 	}
+	public void Block(){
+		// Reduce the damage by 3/5
+	}
+	public void UseItem(Item i){
+
+	}
+
 }
