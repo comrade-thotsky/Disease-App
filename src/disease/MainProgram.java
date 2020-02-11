@@ -21,6 +21,7 @@ public class MainProgram extends JFrame{
 	private String State = "Main Menu";
 	// Test Virus
 	private Virus v = new Virus();
+    //
 	public MainProgram() {
 		// Title of the Window
 		super("Disease Prevention Project");
